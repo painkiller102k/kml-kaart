@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenLayers kaart</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/ol@10.10.0/ol.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>OpenLayers kaart</h1>
+
+  <nav>
+    <a href="index.html">Avaleht</a>
+    <a href="leaflet.html">LeafletJS</a>
+    <a href="openlayers.html">OpenLayers</a>
+    <a href="comparison.html">Võrdlus</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h2>OpenLayers kaart</h2>
+
+  <p>
+    Sellel kaardil kasutan OpenLayersit ja
+    TECHNO-KODU.kml faili.
+  </p>
+
+  <button onclick="openLayersZoomIn()">Suurenda</button>
+  <button onclick="openLayersZoomOut()">Vähenda</button>
+  <button onclick="showAll()">Algvaade</button>
+
+  <div id="openLayersMap"></div>
+
+</main>
+
+<footer>
+  <p>KML kaardiprojekt</p>
+  <p>Martin Rossakov TARpv24</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/ol@10.10.0/dist/ol.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
